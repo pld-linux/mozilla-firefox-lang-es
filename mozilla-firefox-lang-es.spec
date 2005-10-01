@@ -3,12 +3,12 @@ Summary(ca):	Recursos espanyols per Mozilla-firefox
 Summary(es):	Recursos españoles para Mozilla-firefox
 Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-es
-Version:	1.0.2
-Release:	0.1
+Version:	1.0.7
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source0-md5:	f83ee46b48ce83d9421dc726701f4fcd
+# Source0-md5:	b3cd62069c703f388fd63bc633c0bc5a
 Source1:	%{name}-installed-chrome.txt
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Spanish resources for Mozilla-firefox.
 
 %description -l ca
-Recursos españols per Mozilla-firefox.
+Recursos espanyols per Mozilla-firefox.
 
 %description -l es
 Recursos españoles para Mozilla-firefox.
@@ -58,7 +58,7 @@ cat %{_firefoxdir}/chrome/*-installed-chrome.txt >%{_firefoxdir}/chrome/installe
 
 %files
 %defattr(644,root,root,755)
-%{_chromedir}/ca-AD.jar
+%{_chromedir}/es-ES.jar
 %{_chromedir}/%{name}-installed-chrome.txt
 # file conflict:
 #%{_firefoxdir}/defaults/profile/*.rdf
