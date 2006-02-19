@@ -3,13 +3,12 @@ Summary(ca):	Recursos espanyols per Mozilla-firefox
 Summary(es):	Recursos españoles para Mozilla-firefox
 Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-es
-Version:	1.5
+Version:	1.5.0.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source0-md5:	89cbf50f50ddde89a4b1cada2157f51a
-Source1:	%{name}-installed-chrome.txt
+# Source0-md5:	e2cf3de192754243674fbb2a1600004b
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires(post,postun):	mozilla-firefox >= %{version}
@@ -41,24 +40,16 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_chromedir},%{_firefoxdir}/defaults/prof
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_libdir}
 mv -f $RPM_BUILD_ROOT%{_libdir}/chrome/* $RPM_BUILD_ROOT%{_chromedir}
+sed -e 's@chrome/es-ES\.jar@es-ES.jar@' $RPM_BUILD_ROOT%{_libdir}/chrome.manifest \
+	> $RPM_BUILD_ROOT%{_chromedir}/es-ES.manifest
 mv -f $RPM_BUILD_ROOT%{_libdir}/*.rdf $RPM_BUILD_ROOT%{_firefoxdir}/defaults/profile
-
-install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-umask 022
-cat %{_firefoxdir}/chrome/*-installed-chrome.txt >%{_firefoxdir}/chrome/installed-chrome.txt
-
-%postun
-umask 022
-cat %{_firefoxdir}/chrome/*-installed-chrome.txt >%{_firefoxdir}/chrome/installed-chrome.txt
-
 %files
 %defattr(644,root,root,755)
 %{_chromedir}/es-ES.jar
-%{_chromedir}/%{name}-installed-chrome.txt
+%{_chromedir}/es-ES.manifest
 # file conflict:
 #%{_firefoxdir}/defaults/profile/*.rdf
