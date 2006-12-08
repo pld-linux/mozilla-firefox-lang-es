@@ -11,8 +11,6 @@ Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linu
 # Source0-md5:	10b3505b12024bc7f3d4a0f9768cf2a7
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
-Requires(post,postun):	mozilla-firefox >= %{version}
-Requires(post,postun):	textutils
 Requires:	mozilla-firefox >= %{version}
 Provides:	mozilla-firefox-lang-resources = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
