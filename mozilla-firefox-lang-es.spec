@@ -3,12 +3,12 @@ Summary(ca):	Recursos espanyols per Mozilla-firefox
 Summary(es):	Recursos españoles para Mozilla-firefox
 Summary(pl):	Hiszpañskie pliki jêzykowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-es
-Version:	1.5.0.8
+Version:	2.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source0-md5:	a7b1ff20a405824a702af55373d2b143
+# Source0-md5:	10b3505b12024bc7f3d4a0f9768cf2a7
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires(post,postun):	mozilla-firefox >= %{version}
