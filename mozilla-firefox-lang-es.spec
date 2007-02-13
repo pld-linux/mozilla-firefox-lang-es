@@ -1,7 +1,7 @@
 Summary:	Spanish resources for Mozilla-firefox
-Summary(ca.UTF-8):   Recursos espanyols per Mozilla-firefox
-Summary(es.UTF-8):   Recursos españoles para Mozilla-firefox
-Summary(pl.UTF-8):   Hiszpańskie pliki językowe dla Mozilli-firefox
+Summary(ca.UTF-8):	Recursos espanyols per Mozilla-firefox
+Summary(es.UTF-8):	Recursos españoles para Mozilla-firefox
+Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-es
 Version:	2.0.0.1
 Release:	1
