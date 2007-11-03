@@ -1,8 +1,9 @@
+%define		_lang		es
 Summary:	Spanish resources for Mozilla-firefox
 Summary(ca.UTF-8):	Recursos espanyols per Mozilla-firefox
 Summary(es.UTF-8):	Recursos españoles para Mozilla-firefox
 Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Mozilli-firefox
-Name:		mozilla-firefox-lang-es
+Name:		mozilla-firefox-lang-%{_lang}
 Version:	2.0.0.9
 Release:	1
 License:	GPL
