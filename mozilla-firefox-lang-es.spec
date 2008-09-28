@@ -4,12 +4,12 @@ Summary(ca.UTF-8):	Recursos espanyols per Mozilla-firefox
 Summary(es.UTF-8):	Recursos españoles para Mozilla-firefox
 Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Mozilli-firefox
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	3.0
+Version:	3.0.2
 Release:	1
 License:	GPL
 Group:		I18n
-Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source0-md5:	7dda693b83ad73f4fe2dc1d2e45119a2
+Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
+# Source0-md5:	4f36a595e396c1d61f059c830040bcf6
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
