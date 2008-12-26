@@ -1,15 +1,15 @@
 %define		_lang		es
-Summary:	Spanish resources for Mozilla-firefox
-Summary(ca.UTF-8):	Recursos espanyols per Mozilla-firefox
-Summary(es.UTF-8):	Recursos españoles para Mozilla-firefox
-Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Mozilli-firefox
+Summary:	Spanish resources for Firefox
+Summary(ca.UTF-8):	Recursos espanyols per Firefox
+Summary(es.UTF-8):	Recursos españoles para Firefox
+Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Firefoksa
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	3.0.2
+Version:	3.0.5
 Release:	1
-License:	GPL
+License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source0-md5:	4f36a595e396c1d61f059c830040bcf6
+# Source0-md5:	49c588c089e4d28d0dfc92a0e19182e0
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
@@ -21,16 +21,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_chromedir	%{_firefoxdir}/chrome
 
 %description
-Spanish resources for Mozilla-firefox.
+Spanish resources for Firefox.
 
 %description -l ca.UTF-8
-Recursos espanyols per Mozilla-firefox.
+Recursos espanyols per Firefox.
 
 %description -l es.UTF-8
-Recursos españoles para Mozilla-firefox.
+Recursos españoles para Firefox.
 
 %description -l pl.UTF-8
-Hiszpańskie pliki językowe dla Mozilli-firefox.
+Hiszpańskie pliki językowe dla Firefoksa.
 
 %prep
 
