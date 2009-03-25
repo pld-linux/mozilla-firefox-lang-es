@@ -4,12 +4,12 @@ Summary(ca.UTF-8):	Recursos espanyols per Firefox
 Summary(es.UTF-8):	Recursos españoles para Firefox
 Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Firefoksa
 Name:		mozilla-firefox-lang-%{_lang}
-Version:	3.0.5
+Version:	3.0.7
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source0-md5:	49c588c089e4d28d0dfc92a0e19182e0
+# Source0-md5:	0127277d252a26732c4dd9282111368c
 URL:		http://www.mozilla.org/
 BuildRequires:	unzip
 Requires:	mozilla-firefox >= %{version}
